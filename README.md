@@ -1,7 +1,7 @@
-# When Preference Tuning Breaks Confidence: code and results
+# Preference Tuning Breaks Confidence in Sentiment Analysis with Small Language Models: code and results
 
-Code, tests and generated results for the manuscript "When Preference Tuning Breaks
-Confidence: Sentiment Analysis with Small Language Models". This copy is anonymised for
+Code, tests and generated results for the manuscript "Preference Tuning Breaks Confidence in Sentiment Analysis
+with Small Language Models". This copy is anonymised for
 peer review.
 
 ## What is here
