@@ -1,0 +1,38 @@
+\begin{table}[t]
+\centering
+\caption{Ranking results on the stored confidence and on its exact order. $\Delta$AUROC on the confidence as stored in double precision, which rounds to exactly 1.0 once the runner-up probability falls below the resolution of a double, and on the exact order of $c$ computed from the logits, which every ranking metric in the paper uses; ties is the share of the first arm's items whose stored confidence is exactly 1.0. Per-seed mean over each corpus's evaluation sets, five seeds, seed-paired $t$, uncorrected. Rescaling the logits by a temperature between 0.25 and 8 moves the exact AUROC of any DynaSent arm here by at most 0.037. $\uparrow$: higher is better, so a positive difference favours the first-named arm; the tie share has no better direction.}
+\label{tab:exact-order}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lllrlrr}
+\toprule
+Corpus & Model & Comparison & $\Delta$AUROC$\uparrow$ stored & $\Delta$AUROC$\uparrow$ exact [95\% CI] & $p$ exact & Ties \\
+\midrule
+DynaSent & LFM2.5-1.2B & KTO vs SFT & -0.144 & -0.126 [-0.171, -0.081] & 0.001 & 53\% \\
+ &  & R-DPO vs SFT & -0.057 & -0.051 [-0.068, -0.034] & 0.001 & 26\% \\
+ &  & KTO+reg vs KTO & +0.154 & +0.136 [+0.088, +0.184] & 0.001 & 0\% \\
+ &  & R-DPO+reg vs R-DPO & +0.059 & +0.054 [+0.031, +0.076] & 0.003 & 0\% \\
+ & Qwen3.5-2B & KTO vs SFT & -0.139 & -0.117 [-0.193, -0.042] & 0.012 & 70\% \\
+ &  & R-DPO vs SFT & -0.096 & -0.091 [-0.116, -0.066] & $<$0.001 & 48\% \\
+ &  & KTO+reg vs KTO & +0.147 & +0.125 [+0.057, +0.194] & 0.007 & 0\% \\
+ &  & R-DPO+reg vs R-DPO & +0.107 & +0.102 [+0.078, +0.126] & $<$0.001 & 0\% \\
+ & SmolLM3-3B & KTO vs SFT & -0.156 & -0.111 [-0.156, -0.065] & 0.003 & 77\% \\
+ &  & R-DPO vs SFT & -0.125 & -0.115 [-0.142, -0.089] & $<$0.001 & 68\% \\
+ &  & KTO+reg vs KTO & +0.165 & +0.120 [+0.078, +0.161] & 0.001 & 0\% \\
+ &  & R-DPO+reg vs R-DPO & +0.134 & +0.125 [+0.100, +0.150] & $<$0.001 & 0\% \\
+\addlinespace
+GoEmotions & LFM2.5-1.2B & KTO vs SFT & -0.050 & -0.038 [-0.051, -0.025] & 0.001 & 34\% \\
+ &  & R-DPO vs SFT & -0.018 & -0.010 [-0.022, +0.001] & 0.071 & 34\% \\
+ &  & KTO+reg vs KTO & +0.052 & +0.039 [+0.025, +0.054] & 0.002 & 0\% \\
+ &  & R-DPO+reg vs R-DPO & +0.021 & +0.013 [+0.005, +0.021] & 0.010 & 0\% \\
+ & Qwen3.5-2B & KTO vs SFT & -0.041 & -0.037 [-0.063, -0.011] & 0.017 & 24\% \\
+ &  & R-DPO vs SFT & -0.061 & -0.023 [-0.032, -0.015] & 0.002 & 55\% \\
+ &  & KTO+reg vs KTO & +0.045 & +0.040 [+0.020, +0.060] & 0.005 & 0\% \\
+ &  & R-DPO+reg vs R-DPO & +0.058 & +0.020 [+0.012, +0.028] & 0.003 & 0\% \\
+ & SmolLM3-3B & KTO vs SFT & -0.038 & -0.023 [-0.042, -0.003] & 0.033 & 48\% \\
+ &  & R-DPO vs SFT & -0.056 & -0.020 [-0.031, -0.009] & 0.008 & 58\% \\
+ &  & KTO+reg vs KTO & +0.049 & +0.033 [+0.017, +0.049] & 0.004 & 0\% \\
+ &  & R-DPO+reg vs R-DPO & +0.059 & +0.023 [+0.012, +0.033] & 0.004 & 0\% \\
+\bottomrule
+\end{tabular}
+\end{table}

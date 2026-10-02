@@ -1,0 +1,201 @@
+{
+  "sets": [
+    "ambig_eval",
+    "go_test"
+  ],
+  "coverage": 0.5,
+  "ratio": 10.0,
+  "means": {
+    "lfm-1.2b|sft": {
+      "error_full": 0.23601558152476348,
+      "error_half": 0.08717720391807662,
+      "confident": 0.43563717306622146,
+      "confident_error": 0.031096271563717304,
+      "cost": 0.8267282258203575,
+      "deferred": 0.6839812117633698,
+      "wrong_kept": 0.014274701405698786
+    },
+    "lfm-1.2b|kto": {
+      "error_full": 0.23390094602114636,
+      "error_half": 0.10463045414069456,
+      "confident": 0.9405230940456317,
+      "confident_error": 0.2030940456316082,
+      "cost": 0.9304672621011928,
+      "deferred": 0.7316452580186551,
+      "wrong_kept": 0.019882200408253788
+    },
+    "lfm-1.2b|kto-dreg1.0": {
+      "error_full": 0.22978297161936564,
+      "error_half": 0.08227960819234197,
+      "confident": 0.24903728436282688,
+      "confident_error": 0.006833611574846968,
+      "cost": 0.8224470462249606,
+      "deferred": 0.6829932358066996,
+      "wrong_kept": 0.013945381041826094
+    },
+    "lfm-1.2b|rdpo": {
+      "error_full": 0.23256538675570396,
+      "error_half": 0.09260908281389135,
+      "confident": 0.9575514746800223,
+      "confident_error": 0.20888146911519198,
+      "cost": 0.8556025786703152,
+      "deferred": 0.7264484655401334,
+      "wrong_kept": 0.012915411313018158
+    },
+    "lfm-1.2b|rdpo-dreg1.0": {
+      "error_full": 0.2304284919309961,
+      "error_half": 0.08357079252003559,
+      "confident": 0.16881469115191988,
+      "confident_error": 0.00218141346688926,
+      "cost": 0.8230411726266608,
+      "deferred": 0.6929991699354916,
+      "wrong_kept": 0.013004200269116903
+    },
+    "qwen-2b|sft": {
+      "error_full": 0.23423483583750696,
+      "error_half": 0.08975957257346397,
+      "confident": 0.4780634390651085,
+      "confident_error": 0.03953255425709516,
+      "cost": 0.8160613320156951,
+      "deferred": 0.6945538016776103,
+      "wrong_kept": 0.01215075303380848
+    },
+    "qwen-2b|kto": {
+      "error_full": 0.22918196994991655,
+      "error_half": 0.10307212822796082,
+      "confident": 0.8944240400667779,
+      "confident_error": 0.1761602671118531,
+      "cost": 0.9252844873667868,
+      "deferred": 0.7702801973127553,
+      "wrong_kept": 0.01550042900540315
+    },
+    "qwen-2b|kto-dreg1.0": {
+      "error_full": 0.22477462437395657,
+      "error_half": 0.08192341941228853,
+      "confident": 0.27089593767390097,
+      "confident_error": 0.007924318308291597,
+      "cost": 0.8144937379481589,
+      "deferred": 0.6784710788519661,
+      "wrong_kept": 0.013602265909619294
+    },
+    "qwen-2b|rdpo": {
+      "error_full": 0.23183082915971065,
+      "error_half": 0.10850400712377564,
+      "confident": 0.9757818586533112,
+      "confident_error": 0.21811908736783528,
+      "cost": 0.8696060374706341,
+      "deferred": 0.7405330875248322,
+      "wrong_kept": 0.012907294994580204
+    },
+    "qwen-2b|rdpo-dreg1.0": {
+      "error_full": 0.24253756260434053,
+      "error_half": 0.0965438557435441,
+      "confident": 0.2667779632721202,
+      "confident_error": 0.009059543683917641,
+      "cost": 0.8216970597521579,
+      "deferred": 0.7325617479398525,
+      "wrong_kept": 0.008913531181230552
+    },
+    "smollm3-3b|sft": {
+      "error_full": 0.23022815804117974,
+      "error_half": 0.08515138023152272,
+      "confident": 0.45765164162493044,
+      "confident_error": 0.034835837506956034,
+      "cost": 0.8185092344676557,
+      "deferred": 0.6874344079576786,
+      "wrong_kept": 0.013107482650997712
+    },
+    "smollm3-3b|kto": {
+      "error_full": 0.23138564273789647,
+      "error_half": 0.09283170080142478,
+      "confident": 0.9090484140233723,
+      "confident_error": 0.18664440734557597,
+      "cost": 0.8899780859402174,
+      "deferred": 0.7012534657868934,
+      "wrong_kept": 0.018872462015332412
+    },
+    "smollm3-3b|kto-dreg1.0": {
+      "error_full": 0.22375069560378408,
+      "error_half": 0.07771593944790738,
+      "confident": 0.2889705063995548,
+      "confident_error": 0.009304396215915414,
+      "cost": 0.8052463971573264,
+      "deferred": 0.6704194828507841,
+      "wrong_kept": 0.013482691430654234
+    },
+    "smollm3-3b|rdpo": {
+      "error_full": 0.22933778519755146,
+      "error_half": 0.09695013357079252,
+      "confident": 0.9734891485809684,
+      "confident_error": 0.21535893155258767,
+      "cost": 0.868162566588001,
+      "deferred": 0.726256022575852,
+      "wrong_kept": 0.014190654401214892
+    },
+    "smollm3-3b|rdpo-dreg1.0": {
+      "error_full": 0.23187534780189206,
+      "error_half": 0.08637355298308103,
+      "confident": 0.25475792988313856,
+      "confident_error": 0.007991096271563717,
+      "cost": 0.8197641867597575,
+      "deferred": 0.711120872495313,
+      "wrong_kept": 0.01086433142644445
+    }
+  },
+  "contrasts": {
+    "lfm-1.2b|kto-dreg1.0-kto": {
+      "diff": -0.10802021587623237,
+      "relative": -0.11609244115940175,
+      "favours_first_on": 5,
+      "n": 5
+    },
+    "lfm-1.2b|rdpo-dreg1.0-rdpo": {
+      "diff": -0.0325614060436545,
+      "relative": -0.03805669460961409,
+      "favours_first_on": 5,
+      "n": 5
+    },
+    "lfm-1.2b|kto-dreg1.0-sft": {
+      "diff": -0.004281179595397066,
+      "relative": -0.005178460661783837,
+      "favours_first_on": 3,
+      "n": 5
+    },
+    "qwen-2b|kto-dreg1.0-kto": {
+      "diff": -0.11079074941862779,
+      "relative": -0.1197369575857915,
+      "favours_first_on": 5,
+      "n": 5
+    },
+    "qwen-2b|rdpo-dreg1.0-rdpo": {
+      "diff": -0.04790897771847613,
+      "relative": -0.055092738152814374,
+      "favours_first_on": 5,
+      "n": 5
+    },
+    "qwen-2b|kto-dreg1.0-sft": {
+      "diff": -0.0015675940675361044,
+      "relative": -0.0019209267809125348,
+      "favours_first_on": 3,
+      "n": 5
+    },
+    "smollm3-3b|kto-dreg1.0-kto": {
+      "diff": -0.08473168878289106,
+      "relative": -0.09520648892537198,
+      "favours_first_on": 5,
+      "n": 5
+    },
+    "smollm3-3b|rdpo-dreg1.0-rdpo": {
+      "diff": -0.048398379828243264,
+      "relative": -0.055748061124606646,
+      "favours_first_on": 4,
+      "n": 5
+    },
+    "smollm3-3b|kto-dreg1.0-sft": {
+      "diff": -0.013262837310329335,
+      "relative": -0.016203650187227584,
+      "favours_first_on": 4,
+      "n": 5
+    }
+  }
+}

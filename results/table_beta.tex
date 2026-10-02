@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\caption{Sensitivity to the preference temperature $\beta$, LFM2.5-1.2B, seeds 13, 21, 34. Every arm of the paper trains at $\beta = 0.1$; those rows are the paper's runs restricted to the same three seeds. Per-seed mean over the four evaluation sets; seed-paired mean difference with its 95\% interval and uncorrected $p$ for AUROC, and for every metric the number of seeds that agree in sign with the mean. The anchor keeps $\lambda = 1$ at every $\beta$. Declared before the runs; descriptive, outside the declared families. $\uparrow$: higher is better and $\downarrow$: lower is better, so a positive difference in AUROC or accuracy and a negative one in E-AURC favour the first-named arm.}
+\label{tab:beta}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrrrr}
+\toprule
+$\beta$ & Comparison & $\Delta$AUROC$\uparrow$ [95\% CI] & $p$ & Seeds & $\Delta$E-AURC$\downarrow$ & $\Delta$Acc$\uparrow$ \\
+\midrule
+0.03 & KTO vs SFT & -0.154 [-0.242, -0.065] & 0.018 & 3/3 & +0.087 (3/3) & +0.011 (3/3) \\
+ & R-DPO vs SFT & -0.061 [-0.073, -0.048] & 0.002 & 3/3 & +0.057 (3/3) & -0.040 (3/3) \\
+ & KTO+reg vs KTO & +0.167 [+0.076, +0.257] & 0.015 & 3/3 & -0.100 (3/3) & +0.015 (3/3) \\
+ & R-DPO+reg vs R-DPO & +0.067 [+0.050, +0.084] & 0.003 & 3/3 & -0.064 (3/3) & +0.056 (3/3) \\
+\addlinespace
+0.1 & KTO vs SFT & -0.130 [-0.252, -0.007] & 0.045 & 3/3 & +0.080 (3/3) & +0.009 (2/3) \\
+ & R-DPO vs SFT & -0.048 [-0.066, -0.030] & 0.008 & 3/3 & +0.039 (3/3) & -0.010 (2/3) \\
+ & KTO+reg vs KTO & +0.142 [+0.017, +0.268] & 0.039 & 3/3 & -0.093 (3/3) & +0.016 (3/3) \\
+ & R-DPO+reg vs R-DPO & +0.053 [+0.031, +0.076] & 0.009 & 3/3 & -0.046 (3/3) & +0.023 (3/3) \\
+\addlinespace
+0.3 & KTO vs SFT & -0.048 [-0.109, +0.012] & 0.076 & 3/3 & +0.044 (3/3) & -0.004 (1/3) \\
+ & R-DPO vs SFT & -0.079 [-0.146, -0.011] & 0.037 & 3/3 & +0.050 (3/3) & +0.005 (2/3) \\
+ & KTO+reg vs KTO & +0.060 [+0.005, +0.116] & 0.042 & 3/3 & -0.056 (3/3) & +0.030 (3/3) \\
+ & R-DPO+reg vs R-DPO & +0.076 [+0.021, +0.131] & 0.027 & 3/3 & -0.052 (3/3) & +0.004 (2/3) \\
+\bottomrule
+\end{tabular}
+\end{table}

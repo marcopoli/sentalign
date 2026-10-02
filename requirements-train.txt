@@ -1,0 +1,29 @@
+# GPU host only. Install after requirements.txt.
+#
+# TRL is pinned to the 0.2x line, and the ceiling is as load-bearing as the floor.
+#
+#   floor 0.24.0   below it `loss_type` is a bare string and the 'robust' loss used for
+#                  rDPO is absent, so an arm would train something other than its name
+#   ceiling 1.0    TRL 1.x removed CPOTrainer (which provides SimPO and AlphaPO),
+#                  renamed get_batch_loss_metrics to _compute_loss, and changed the
+#                  preference batch from separate chosen/rejected fields to one
+#                  concatenated tensor. Code written against 0.2x does not run on 1.x.
+#
+# The 0.2x line is also what Unsloth targets: Unsloth 2026.x gates its TRL compatibility
+# between 0.23.0 and 0.28.0 and has no branch for 1.x. Since training goes through
+# Unsloth, 0.2x is the supported configuration. sentalign.train.po.check_trl() asserts
+# both ends at run time, because a silent API drift would not crash: it would train a
+# different objective than the one named in the results table.
+torch>=2.4
+transformers>=5.0
+trl>=0.24,<1.0
+peft>=0.14
+accelerate>=1.0
+bitsandbytes>=0.44
+sentencepiece
+
+# Unsloth is intentionally not pinned here: its wheel is CUDA-specific, so install it
+# for your CUDA version per https://github.com/unslothai/unsloth. The pipeline runs
+# without it (falling back to transformers plus peft) and warns when it does.
+# Verified working: unsloth 2026.8.18 with torch 2.11.0+cu130, transformers 5.5.0,
+# trl 0.24.0, peft 0.20.0 on an RTX 3090.

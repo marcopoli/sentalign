@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Errors shown with confidence above 0.9, per 1{,}000 items, with the share of all items shown above 0.9 in brackets; the numbers behind the near-certain-error figure. Items pooled over each corpus's evaluation sets within a seed, averaged over five seeds. $\downarrow$: lower is better for the count; the share in brackets has no better direction. Descriptive, outside the declared families.}
+\label{tab:near-certain}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrrr}
+\toprule
+& & \multicolumn{5}{c}{Wrong and $>0.9$ per 1{,}000 $\downarrow$ (share $>0.9$)} \\ \cmidrule(lr){3-7}
+Corpus & Model & SFT & KTO & KTO+reg & R-DPO & R-DPO+reg \\
+\midrule
+DynaSent & LFM2.5-1.2B & 53 (52\%) & 249 (99\%) & 2 (10\%) & 229 (94\%) & 1 (6\%) \\
+ & Qwen3.5-2B & 57 (58\%) & 233 (99\%) & 1 (11\%) & 224 (98\%) & 3 (13\%) \\
+ & SmolLM3-3B & 53 (65\%) & 183 (98\%) & 1 (10\%) & 187 (99\%) & 2 (15\%) \\
+\addlinespace
+GoEmotions & LFM2.5-1.2B & 31 (44\%) & 203 (94\%) & 7 (25\%) & 209 (96\%) & 2 (17\%) \\
+ & Qwen3.5-2B & 40 (48\%) & 176 (89\%) & 8 (27\%) & 218 (98\%) & 9 (27\%) \\
+ & SmolLM3-3B & 35 (46\%) & 187 (91\%) & 9 (29\%) & 215 (97\%) & 8 (25\%) \\
+\bottomrule
+\end{tabular}
+\end{table}

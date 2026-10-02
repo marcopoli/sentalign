@@ -1,0 +1,51 @@
+\begin{table}[t]
+\centering
+\caption{The confirmatory comparisons. Per-seed mean over the four evaluation sets, five seeds, paired $t$ on seeds, Holm correction within each declared family. AUROC is of confidence against correctness and E-AURC is accuracy-corrected selective risk. Panels A and B ask whether the anchor improves its own objective; panels C and D ask whether the result beats the supervised baseline it was trained from, and are the two metrics of one family, corrected together. An arrow gives the sign of a difference that favours the first-named arm: $\uparrow$ where higher is better, $\downarrow$ where lower is.}
+\label{tab:differences}
+\footnotesize
+\begin{tabular}{llll}
+\toprule
+Model & Comparison & Difference [95\% CI] & $p_{\mathrm{Holm}}$ \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{A. Against the twin, AUROC $\uparrow$ (higher better), Holm over 8}} \\
+LFM2.5-1.2B & KTO+reg vs KTO & +0.136$^{**}$ [+0.088, +0.184] & 0.008 \\
+ & R-DPO+reg vs R-DPO & +0.054$^{**}$ [+0.031, +0.076] & 0.008 \\
+ & IPO+reg vs IPO & +0.035$^{**}$ [+0.023, +0.048] & 0.008 \\
+Qwen3.5-2B & KTO+reg vs KTO & +0.125$^{*}$ [+0.057, +0.194] & 0.014 \\
+ & R-DPO+reg vs R-DPO & +0.102$^{**}$ [+0.078, +0.126] & 0.002 \\
+ & IPO+reg vs IPO & +0.011$^{*}$ [+0.004, +0.019] & 0.015 \\
+SmolLM3-3B & KTO+reg vs KTO & +0.120$^{**}$ [+0.078, +0.161] & 0.008 \\
+ & R-DPO+reg vs R-DPO & +0.125$^{**}$ [+0.100, +0.150] & 0.001 \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{B. Against the twin, E-AURC $\downarrow$ (lower better), Holm over 8}} \\
+LFM2.5-1.2B & KTO+reg vs KTO & -0.089$^{**}$ [-0.116, -0.062] & 0.005 \\
+ & R-DPO+reg vs R-DPO & -0.045$^{**}$ [-0.060, -0.030] & 0.005 \\
+ & IPO+reg vs IPO & -0.012$^{*}$ [-0.021, -0.003] & 0.027 \\
+Qwen3.5-2B & KTO+reg vs KTO & -0.085$^{*}$ [-0.129, -0.041] & 0.017 \\
+ & R-DPO+reg vs R-DPO & -0.072$^{**}$ [-0.092, -0.052] & 0.004 \\
+ & IPO+reg vs IPO & -0.006$^{*}$ [-0.011, -0.002] & 0.027 \\
+SmolLM3-3B & KTO+reg vs KTO & -0.070$^{**}$ [-0.096, -0.043] & 0.007 \\
+ & R-DPO+reg vs R-DPO & -0.069$^{**}$ [-0.085, -0.053] & 0.002 \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{C. Against SFT, E-AURC $\downarrow$ (lower better), Holm over 16}} \\
+LFM2.5-1.2B & KTO+reg vs SFT & -0.011$^{*}$ [-0.014, -0.007] & 0.017 \\
+ & R-DPO+reg vs SFT & -0.004 [-0.009, -0.000] & 0.241 \\
+ & IPO+reg vs SFT & +0.010 [+0.004, +0.015] & 0.084 \\
+Qwen3.5-2B & KTO+reg vs SFT & -0.010 [-0.017, -0.004] & 0.108 \\
+ & R-DPO+reg vs SFT & -0.009 [-0.015, -0.002] & 0.139 \\
+ & IPO+reg vs SFT & +0.001 [-0.007, +0.009] & 0.725 \\
+SmolLM3-3B & KTO+reg vs SFT & -0.006 [-0.010, -0.003] & 0.084 \\
+ & R-DPO+reg vs SFT & -0.005$^{*}$ [-0.007, -0.003] & 0.042 \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{D. Against SFT, accuracy $\uparrow$ (higher better), Holm over 16}} \\
+LFM2.5-1.2B & KTO+reg vs SFT & +0.023$^{**}$ [+0.018, +0.028] & 0.003 \\
+ & R-DPO+reg vs SFT & +0.010 [+0.001, +0.019] & 0.206 \\
+ & IPO+reg vs SFT & -0.008 [-0.016, -0.000] & 0.241 \\
+Qwen3.5-2B & KTO+reg vs SFT & +0.028$^{*}$ [+0.018, +0.039] & 0.026 \\
+ & R-DPO+reg vs SFT & +0.016 [-0.003, +0.036] & 0.248 \\
+ & IPO+reg vs SFT & +0.029 [+0.010, +0.047] & 0.108 \\
+SmolLM3-3B & KTO+reg vs SFT & +0.015 [+0.008, +0.023] & 0.062 \\
+ & R-DPO+reg vs SFT & +0.009 [-0.002, +0.019] & 0.248 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\caption{Expected cost per item of a deferral policy, in units of one human review, with the share of items deferred in brackets. An undetected error costs $r$ reviews. The confidence threshold is chosen on one half of the items and paid for on the other, both ways, pooled over the four evaluation sets and averaged over five seeds. Deferring every item costs $1$. $\downarrow$: lower is better; the share deferred has no better direction.}
+\label{tab:deferral}
+\footnotesize
+\begin{tabular}{llrrr}
+\toprule
+& & \multicolumn{3}{c}{Cost per item $\downarrow$ (share deferred)} \\ \cmidrule(lr){3-5}
+Model & Objective & $r = 3$ & $r = 10$ & $r = 30$ \\
+\midrule
+LFM2.5-1.2B & SFT & 0.620 (35\%) & 0.886 (73\%) & 0.975 (93\%) \\
+ & KTO & 0.672 (22\%) & 0.985 (91\%) & 1.007 (100\%) \\
+ & KTO+reg & 0.581 (33\%) & 0.846 (64\%) & 0.952 (89\%) \\
+ & R-DPO & 0.658 (29\%) & 0.954 (82\%) & 1.003 (100\%) \\
+ & R-DPO+reg & 0.601 (33\%) & 0.851 (69\%) & 0.970 (92\%) \\
+\addlinespace
+Qwen3.5-2B & SFT & 0.581 (31\%) & 0.844 (65\%) & 0.982 (90\%) \\
+ & KTO & 0.624 (22\%) & 0.974 (88\%) & 1.002 (100\%) \\
+ & KTO+reg & 0.543 (27\%) & 0.808 (60\%) & 0.928 (87\%) \\
+ & R-DPO & 0.619 (23\%) & 0.985 (90\%) & 1.003 (100\%) \\
+ & R-DPO+reg & 0.556 (29\%) & 0.812 (62\%) & 0.962 (89\%) \\
+\addlinespace
+SmolLM3-3B & SFT & 0.493 (23\%) & 0.770 (55\%) & 0.956 (85\%) \\
+ & KTO & 0.523 (17\%) & 0.962 (84\%) & 1.006 (100\%) \\
+ & KTO+reg & 0.459 (19\%) & 0.737 (51\%) & 0.915 (79\%) \\
+ & R-DPO & 0.524 (15\%) & 0.956 (81\%) & 1.005 (100\%) \\
+ & R-DPO+reg & 0.474 (21\%) & 0.749 (53\%) & 0.919 (81\%) \\
+\bottomrule
+\end{tabular}
+\end{table}

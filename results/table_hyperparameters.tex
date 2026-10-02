@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\caption{Training configuration shared by every arm, read from the configuration the runs were launched with. Settings are fixed, not tuned per arm; no column carries a better direction.}
+\label{tab:hyperparameters}
+\footnotesize
+\begin{tabular}{lp{5.4cm}p{6.2cm}}
+\toprule
+Group & Setting & Value \\
+\midrule
+Adapters & LoRA rank / scale / dropout & 16 / 32 / 0.0 \\
+ & Base weights & 4-bit NF4, sequence length 256 \\
+Optimisation & Optimiser, schedule & 8-bit AdamW, cosine, warm-up 0.03 \\
+ & Effective batch, epochs & 32, 2 \\
+ & Learning rate, SFT / preference & $2 \times 10^{-4}$ / $5 \times 10^{-5}$ \\
+ & Weight decay, gradient clip & 0.01, 1.0 \\
+ & Checkpoint selection & development macro-F$_1$ on 1{,}000 items every 150 steps, no early stopping \\
+Data & Training items (SFT) / pairs (preference; KTO twice as many completions) & 8{,}000 / 8{,}000 \\
+ & Pair threshold $\tau$ & 0.2 \\
+ & KTO desirable / undesirable at & $\ge 0.6$ / $\le 0.2$ share of annotators \\
+Objectives & $\beta$ (DPO, R-DPO, IPO, GR-DPO, MixDPO, KTO) & 0.1 \\
+ & R-DPO flip rate $\varepsilon$ & 0.1 \\
+ & SimPO $\beta$ / $\gamma$ & 2.0 / 0.5 \\
+ & AlphaPO $\alpha$ & -0.25 \\
+ & GR-DPO group step size & 0.01 \\
+ & MixDPO margin threshold / supervised weight & 0.5 / 1.0 \\
+ & KTO class weights & recomputed per run from its own subsample \\
+Anchor & Weight $\lambda$, target & 1, annotator distribution (majority label in the ablation) \\
+\bottomrule
+\end{tabular}
+\end{table}

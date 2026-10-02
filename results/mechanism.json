@@ -1,0 +1,517 @@
+{
+  "means": {
+    "lfm-1.2b|sft": {
+      "auroc": 0.769912223759551,
+      "sensitivity": 0.31626806105936345,
+      "log_odds": 2.2160037168627156,
+      "seeds": 5
+    },
+    "lfm-1.2b|sft_soft": {
+      "auroc": 0.7771161479670321,
+      "sensitivity": 0.3200996732105287,
+      "log_odds": 0.5796864841004408,
+      "seeds": 5
+    },
+    "lfm-1.2b|dpo": {
+      "auroc": 0.7666258805285378,
+      "sensitivity": 0.3177922829918341,
+      "log_odds": 11.367254845930622,
+      "seeds": 5
+    },
+    "lfm-1.2b|rdpo": {
+      "auroc": 0.7185615064031344,
+      "sensitivity": 0.21984269766665107,
+      "log_odds": 22.02201098842671,
+      "seeds": 5
+    },
+    "lfm-1.2b|ipo": {
+      "auroc": 0.719479950550762,
+      "sensitivity": 0.23481492771093465,
+      "log_odds": 4.274124094528192,
+      "seeds": 5
+    },
+    "lfm-1.2b|grdpo": {
+      "auroc": 0.7581139646601788,
+      "sensitivity": 0.30000626660151336,
+      "log_odds": 11.107535365306658,
+      "seeds": 5
+    },
+    "lfm-1.2b|mixdpo": {
+      "auroc": 0.7587859592371193,
+      "sensitivity": 0.2938432221014913,
+      "log_odds": 0.61519884325403,
+      "seeds": 5
+    },
+    "lfm-1.2b|simpo": {
+      "auroc": 0.7726816964197778,
+      "sensitivity": 0.31720112930194155,
+      "log_odds": 2.5465117824175403,
+      "seeds": 5
+    },
+    "lfm-1.2b|alphapo": {
+      "auroc": 0.7687203902185582,
+      "sensitivity": 0.3091453509400255,
+      "log_odds": 3.3949573688289902,
+      "seeds": 5
+    },
+    "lfm-1.2b|kto": {
+      "auroc": 0.6440511088726256,
+      "sensitivity": 0.10794943348991518,
+      "log_odds": 37.611556701414216,
+      "seeds": 5
+    },
+    "lfm-1.2b|kto-dreg1.0": {
+      "auroc": 0.7799290026646161,
+      "sensitivity": 0.3269701411460156,
+      "log_odds": 0.8421271861153874,
+      "seeds": 5
+    },
+    "lfm-1.2b|rdpo-dreg1.0": {
+      "auroc": 0.7722706748886843,
+      "sensitivity": 0.31696093808237524,
+      "log_odds": 0.5060383996521205,
+      "seeds": 5
+    },
+    "lfm-1.2b|ipo-dreg1.0": {
+      "auroc": 0.7547919669020031,
+      "sensitivity": 0.2844549214438052,
+      "log_odds": 0.6228229007878331,
+      "seeds": 5
+    },
+    "qwen-2b|sft": {
+      "auroc": 0.783753614354104,
+      "sensitivity": 0.3014003616879415,
+      "log_odds": 2.4892565704738994,
+      "seeds": 5
+    },
+    "qwen-2b|sft_soft": {
+      "auroc": 0.7802220918996157,
+      "sensitivity": 0.3104192421259951,
+      "log_odds": 0.44911055930097293,
+      "seeds": 5
+    },
+    "qwen-2b|dpo": {
+      "auroc": 0.777074311778036,
+      "sensitivity": 0.28048175118015506,
+      "log_odds": 23.012986268731456,
+      "seeds": 5
+    },
+    "qwen-2b|rdpo": {
+      "auroc": 0.6930517315002472,
+      "sensitivity": 0.15555353458790117,
+      "log_odds": 37.913879536363744,
+      "seeds": 5
+    },
+    "qwen-2b|ipo": {
+      "auroc": 0.7550287775050617,
+      "sensitivity": 0.26776133159300236,
+      "log_odds": 6.068539088176074,
+      "seeds": 5
+    },
+    "qwen-2b|grdpo": {
+      "auroc": 0.7631391622256165,
+      "sensitivity": 0.2518821478204781,
+      "log_odds": 21.63255821697585,
+      "seeds": 5
+    },
+    "qwen-2b|mixdpo": {
+      "auroc": 0.7136160909912214,
+      "sensitivity": 0.26233977152904087,
+      "log_odds": -0.025808473615657607,
+      "seeds": 5
+    },
+    "qwen-2b|simpo": {
+      "auroc": 0.79482180229392,
+      "sensitivity": 0.30783625027582334,
+      "log_odds": 2.8396985382110063,
+      "seeds": 5
+    },
+    "qwen-2b|alphapo": {
+      "auroc": 0.7879169295899062,
+      "sensitivity": 0.30104982181753953,
+      "log_odds": 3.4133431898335522,
+      "seeds": 5
+    },
+    "qwen-2b|kto": {
+      "auroc": 0.6663636444263681,
+      "sensitivity": 0.11134394539995685,
+      "log_odds": 44.21188527909375,
+      "seeds": 5
+    },
+    "qwen-2b|kto-dreg1.0": {
+      "auroc": 0.7917301871810498,
+      "sensitivity": 0.3322582149779384,
+      "log_odds": 0.8293052566981942,
+      "seeds": 5
+    },
+    "qwen-2b|rdpo-dreg1.0": {
+      "auroc": 0.7948735768537303,
+      "sensitivity": 0.3284018679209314,
+      "log_odds": 0.8070954577920271,
+      "seeds": 5
+    },
+    "qwen-2b|ipo-dreg1.0": {
+      "auroc": 0.7664105885287422,
+      "sensitivity": 0.2872722412002172,
+      "log_odds": 4.775758167388223,
+      "seeds": 5
+    },
+    "smollm3-3b|sft": {
+      "auroc": 0.8007844538055648,
+      "sensitivity": 0.3379170809240283,
+      "log_odds": 3.0411372552392257,
+      "seeds": 5
+    },
+    "smollm3-3b|sft_soft": {
+      "auroc": 0.8022546738913252,
+      "sensitivity": 0.34693518937078244,
+      "log_odds": 0.7201101954356528,
+      "seeds": 5
+    },
+    "smollm3-3b|dpo": {
+      "auroc": 0.795781997093952,
+      "sensitivity": 0.327902424127724,
+      "log_odds": 27.304203715572733,
+      "seeds": 5
+    },
+    "smollm3-3b|rdpo": {
+      "auroc": 0.6852945194576,
+      "sensitivity": 0.14515640677143676,
+      "log_odds": 51.05213801502187,
+      "seeds": 5
+    },
+    "smollm3-3b|ipo": {
+      "auroc": 0.7766761428993935,
+      "sensitivity": 0.27428428583598075,
+      "log_odds": 6.402092562211526,
+      "seeds": 5
+    },
+    "smollm3-3b|grdpo": {
+      "auroc": 0.7905468868231854,
+      "sensitivity": 0.30186504200999953,
+      "log_odds": 26.056369482180408,
+      "seeds": 5
+    },
+    "smollm3-3b|mixdpo": {
+      "auroc": 0.7127369249725308,
+      "sensitivity": 0.27714370818785716,
+      "log_odds": -0.011791214287427982,
+      "seeds": 5
+    },
+    "smollm3-3b|simpo": {
+      "auroc": 0.8065786102162497,
+      "sensitivity": 0.3430498566413623,
+      "log_odds": 3.3352331618175426,
+      "seeds": 5
+    },
+    "smollm3-3b|alphapo": {
+      "auroc": 0.8048646814907144,
+      "sensitivity": 0.3360686541623907,
+      "log_odds": 4.391190096881712,
+      "seeds": 5
+    },
+    "smollm3-3b|kto": {
+      "auroc": 0.6900752648945822,
+      "sensitivity": 0.17176507562729548,
+      "log_odds": 55.2859743746749,
+      "seeds": 5
+    },
+    "smollm3-3b|kto-dreg1.0": {
+      "auroc": 0.8096894528039446,
+      "sensitivity": 0.3552544014015212,
+      "log_odds": 0.9828006883769792,
+      "seeds": 5
+    },
+    "smollm3-3b|rdpo-dreg1.0": {
+      "auroc": 0.8104440031791394,
+      "sensitivity": 0.36122902056251854,
+      "log_odds": 1.042961494249024,
+      "seeds": 5
+    },
+    "smollm3-3b|ipo-dreg1.0": {
+      "auroc": 0.7926686372169749,
+      "sensitivity": 0.3002922610117773,
+      "log_odds": 5.157922192734203,
+      "seeds": 5
+    }
+  },
+  "cells": [
+    {
+      "model": "lfm-1.2b",
+      "arm": "sft_soft",
+      "d_auroc": 0.0072039242074810605,
+      "d_sensitivity": 0.0038316121511652312,
+      "d_log_odds": -1.6363172327622748
+    },
+    {
+      "model": "lfm-1.2b",
+      "arm": "dpo",
+      "d_auroc": -0.003286343231013289,
+      "d_sensitivity": 0.0015242219324706485,
+      "d_log_odds": 9.151251129067907
+    },
+    {
+      "model": "lfm-1.2b",
+      "arm": "rdpo",
+      "d_auroc": -0.05135071735641661,
+      "d_sensitivity": -0.09642536339271238,
+      "d_log_odds": 19.806007271563995
+    },
+    {
+      "model": "lfm-1.2b",
+      "arm": "ipo",
+      "d_auroc": -0.05043227320878907,
+      "d_sensitivity": -0.0814531333484288,
+      "d_log_odds": 2.0581203776654764
+    },
+    {
+      "model": "lfm-1.2b",
+      "arm": "grdpo",
+      "d_auroc": -0.011798259099372266,
+      "d_sensitivity": -0.016261794457850087,
+      "d_log_odds": 8.891531648443943
+    },
+    {
+      "model": "lfm-1.2b",
+      "arm": "mixdpo",
+      "d_auroc": -0.011126264522431706,
+      "d_sensitivity": -0.022424838957872173,
+      "d_log_odds": -1.6008048736086855
+    },
+    {
+      "model": "lfm-1.2b",
+      "arm": "simpo",
+      "d_auroc": 0.002769472660226757,
+      "d_sensitivity": 0.0009330682425781056,
+      "d_log_odds": 0.3305080655548247
+    },
+    {
+      "model": "lfm-1.2b",
+      "arm": "alphapo",
+      "d_auroc": -0.0011918335409928371,
+      "d_sensitivity": -0.0071227101193379605,
+      "d_log_odds": 1.1789536519662747
+    },
+    {
+      "model": "lfm-1.2b",
+      "arm": "kto",
+      "d_auroc": -0.12586111488692542,
+      "d_sensitivity": -0.20831862756944827,
+      "d_log_odds": 35.3955529845515
+    },
+    {
+      "model": "lfm-1.2b",
+      "arm": "kto-dreg1.0",
+      "d_auroc": 0.010016778905065027,
+      "d_sensitivity": 0.010702080086652133,
+      "d_log_odds": -1.3738765307473282
+    },
+    {
+      "model": "lfm-1.2b",
+      "arm": "rdpo-dreg1.0",
+      "d_auroc": 0.0023584511291332433,
+      "d_sensitivity": 0.0006928770230117953,
+      "d_log_odds": -1.709965317210595
+    },
+    {
+      "model": "lfm-1.2b",
+      "arm": "ipo-dreg1.0",
+      "d_auroc": -0.01512025685754792,
+      "d_sensitivity": -0.03181313961555826,
+      "d_log_odds": -1.5931808160748826
+    },
+    {
+      "model": "qwen-2b",
+      "arm": "sft_soft",
+      "d_auroc": -0.0035315224544882895,
+      "d_sensitivity": 0.0090188804380536,
+      "d_log_odds": -2.0401460111729266
+    },
+    {
+      "model": "qwen-2b",
+      "arm": "dpo",
+      "d_auroc": -0.006679302576067969,
+      "d_sensitivity": -0.020918610507786428,
+      "d_log_odds": 20.523729698257558
+    },
+    {
+      "model": "qwen-2b",
+      "arm": "rdpo",
+      "d_auroc": -0.09070188285385672,
+      "d_sensitivity": -0.14584682710004032,
+      "d_log_odds": 35.424622965889846
+    },
+    {
+      "model": "qwen-2b",
+      "arm": "ipo",
+      "d_auroc": -0.028724836849042257,
+      "d_sensitivity": -0.033639030094939126,
+      "d_log_odds": 3.5792825177021745
+    },
+    {
+      "model": "qwen-2b",
+      "arm": "grdpo",
+      "d_auroc": -0.020614452128487448,
+      "d_sensitivity": -0.04951821386746341,
+      "d_log_odds": 19.14330164650195
+    },
+    {
+      "model": "qwen-2b",
+      "arm": "mixdpo",
+      "d_auroc": -0.07013752336288259,
+      "d_sensitivity": -0.03906059015890062,
+      "d_log_odds": -2.515065044089557
+    },
+    {
+      "model": "qwen-2b",
+      "arm": "simpo",
+      "d_auroc": 0.01106818793981601,
+      "d_sensitivity": 0.006435888587881855,
+      "d_log_odds": 0.3504419677371069
+    },
+    {
+      "model": "qwen-2b",
+      "arm": "alphapo",
+      "d_auroc": 0.004163315235802267,
+      "d_sensitivity": -0.0003505398704019558,
+      "d_log_odds": 0.9240866193596529
+    },
+    {
+      "model": "qwen-2b",
+      "arm": "kto",
+      "d_auroc": -0.11738996992773587,
+      "d_sensitivity": -0.19005641628798464,
+      "d_log_odds": 41.72262870861985
+    },
+    {
+      "model": "qwen-2b",
+      "arm": "kto-dreg1.0",
+      "d_auroc": 0.00797657282694586,
+      "d_sensitivity": 0.030857853289996906,
+      "d_log_odds": -1.6599513137757052
+    },
+    {
+      "model": "qwen-2b",
+      "arm": "rdpo-dreg1.0",
+      "d_auroc": 0.011119962499626324,
+      "d_sensitivity": 0.027001506232989914,
+      "d_log_odds": -1.6821611126818723
+    },
+    {
+      "model": "qwen-2b",
+      "arm": "ipo-dreg1.0",
+      "d_auroc": -0.017343025825361735,
+      "d_sensitivity": -0.014128120487724272,
+      "d_log_odds": 2.2865015969143236
+    },
+    {
+      "model": "smollm3-3b",
+      "arm": "sft_soft",
+      "d_auroc": 0.0014702200857603653,
+      "d_sensitivity": 0.009018108446754158,
+      "d_log_odds": -2.3210270598035727
+    },
+    {
+      "model": "smollm3-3b",
+      "arm": "dpo",
+      "d_auroc": -0.005002456711612813,
+      "d_sensitivity": -0.010014656796304255,
+      "d_log_odds": 24.26306646033351
+    },
+    {
+      "model": "smollm3-3b",
+      "arm": "rdpo",
+      "d_auroc": -0.11548993434796484,
+      "d_sensitivity": -0.19276067415259152,
+      "d_log_odds": 48.01100075978264
+    },
+    {
+      "model": "smollm3-3b",
+      "arm": "ipo",
+      "d_auroc": -0.024108310906171382,
+      "d_sensitivity": -0.06363279508804753,
+      "d_log_odds": 3.3609553069723
+    },
+    {
+      "model": "smollm3-3b",
+      "arm": "grdpo",
+      "d_auroc": -0.010237566982379431,
+      "d_sensitivity": -0.03605203891402875,
+      "d_log_odds": 23.015232226941183
+    },
+    {
+      "model": "smollm3-3b",
+      "arm": "mixdpo",
+      "d_auroc": -0.08804752883303402,
+      "d_sensitivity": -0.060773372736171116,
+      "d_log_odds": -3.0529284695266536
+    },
+    {
+      "model": "smollm3-3b",
+      "arm": "simpo",
+      "d_auroc": 0.005794156410684814,
+      "d_sensitivity": 0.005132775717334004,
+      "d_log_odds": 0.29409590657831686
+    },
+    {
+      "model": "smollm3-3b",
+      "arm": "alphapo",
+      "d_auroc": 0.0040802276851495956,
+      "d_sensitivity": -0.0018484267616376004,
+      "d_log_odds": 1.3500528416424866
+    },
+    {
+      "model": "smollm3-3b",
+      "arm": "kto",
+      "d_auroc": -0.11070918891098269,
+      "d_sensitivity": -0.1661520052967328,
+      "d_log_odds": 52.24483711943567
+    },
+    {
+      "model": "smollm3-3b",
+      "arm": "kto-dreg1.0",
+      "d_auroc": 0.00890499899837971,
+      "d_sensitivity": 0.017337320477492923,
+      "d_log_odds": -2.0583365668622466
+    },
+    {
+      "model": "smollm3-3b",
+      "arm": "rdpo-dreg1.0",
+      "d_auroc": 0.009659549373574605,
+      "d_sensitivity": 0.023311939638490264,
+      "d_log_odds": -1.9981757609902018
+    },
+    {
+      "model": "smollm3-3b",
+      "arm": "ipo-dreg1.0",
+      "d_auroc": -0.008115816588589952,
+      "d_sensitivity": -0.03762481991225097,
+      "d_log_odds": 2.116784937494977
+    }
+  ],
+  "n_cells": 36,
+  "sensitivity": {
+    "pearson": 0.9496569906037569,
+    "spearman": 0.9418275418275419,
+    "partial_given_inflation": 0.8926259753240208
+  },
+  "inflation": {
+    "pearson": -0.7514131871786099,
+    "spearman": -0.5621621621621622,
+    "partial_given_sensitivity": 0.31395417344024745
+  },
+  "within_model": {
+    "lfm-1.2b": {
+      "sensitivity": 0.9967170371768761,
+      "inflation": -0.8781664228021612
+    },
+    "qwen-2b": {
+      "sensitivity": 0.9398809775219303,
+      "inflation": -0.7468429548727941
+    },
+    "smollm3-3b": {
+      "sensitivity": 0.9326255972027973,
+      "inflation": -0.7128834187110696
+    }
+  }
+}

@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{The anchor against TRL's own likelihood term. R-DPO+RPO adds, with \texttt{rpo\_alpha} $= 1$, the negative log-likelihood of the preferred completion, averaged over its two tokens (the label and the end of sequence), to every pair's R-DPO loss. Per-seed mean over the four evaluation sets, five seeds, seed-paired $t$. $^{\dagger}$: the declared family, Holm-adjusted over its 4 tests; every other $p$ is uncorrected. $\uparrow$: higher is better and $\downarrow$: lower is better, so a positive difference in AUROC or accuracy and a negative one in E-AURC favour the first-named arm.}
+\label{tab:rpo}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+Comparison & $\Delta$AUROC$\uparrow$ [95\% CI] & $p$ & $\Delta$E-AURC$\downarrow$ ($p$) & $\Delta$Acc$\uparrow$ ($p$) \\
+\midrule
+\multicolumn{5}{l}{\textit{LFM2.5-1.2B}} \\
+R-DPO+RPO vs R-DPO & +0.049 [+0.027, +0.070] & 0.010$^{\dagger}$ & -0.039 (0.002) & +0.011 (0.263) \\
+R-DPO+reg vs R-DPO+RPO & +0.005 [-0.007, +0.017] & 0.428$^{\dagger}$ & -0.006 (0.029) & +0.010 (0.137) \\
+R-DPO+RPO vs SFT & -0.003 [-0.012, +0.007] & 0.476 & +0.001 (0.508) & +0.000 (0.943) \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Qwen3.5-2B}} \\
+R-DPO+RPO vs R-DPO & +0.096 [+0.076, +0.116] & $<$0.001$^{\dagger}$ & -0.066 ($<$0.001) & -0.002 (0.732) \\
+R-DPO+reg vs R-DPO+RPO & +0.006 [-0.005, +0.016] & 0.428$^{\dagger}$ & -0.006 (0.016) & +0.018 ($<$0.001) \\
+R-DPO+RPO vs SFT & +0.006 [-0.012, +0.023] & 0.422 & -0.003 (0.460) & -0.002 (0.800) \\
+\bottomrule
+\end{tabular}
+\end{table}

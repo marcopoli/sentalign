@@ -1,0 +1,31 @@
+{
+  "groups": {
+    "GoEmotions replication": {
+      "runs": 75,
+      "gpu_hours": 121.0
+    },
+    "sentiment landscape": {
+      "runs": 195,
+      "gpu_hours": 202.7
+    },
+    "beta sensitivity": {
+      "runs": 24,
+      "gpu_hours": 20.9
+    },
+    "hard-target ablation": {
+      "runs": 10,
+      "gpu_hours": 16.8
+    },
+    "anchor-weight check": {
+      "runs": 9,
+      "gpu_hours": 14.3
+    },
+    "RPO comparison": {
+      "runs": 10,
+      "gpu_hours": 5.5
+    }
+  },
+  "runs": 323,
+  "gpu_hours": 381.2,
+  "in_progress": []
+}

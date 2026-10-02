@@ -1,0 +1,41 @@
+\begin{table}[t]
+\centering
+\caption{Error and confidence by annotator agreement. The ambiguity-stratified set split by how many of the five annotators chose the majority label (items per band: 5/5: 1{,}409, 4/5: 2{,}057, 3/5: 2{,}486), averaged over five seeds. Error is the error rate; $>0.9$ is the share of items shown with confidence above 0.9; wrong and $>0.9$ is the share that are both, which is what a person reading the score is misled by; AUROC is computed within the band. $\uparrow$ marks a column where higher is better and $\downarrow$ one where lower is; the share above 0.9 has no better direction, since it should be high where annotators agreed and low where they did not. Descriptive, outside the declared families.}
+\label{tab:bands}
+\footnotesize
+\begin{tabular}{lllrrrr}
+\toprule
+Model & Band & Arm & Error$\downarrow$ & $>0.9$ & Wrong and $>0.9$ $\downarrow$ & AUROC$\uparrow$ \\
+\midrule
+LFM2.5-1.2B & 5/5 & SFT & 0.083 & 0.75 & 0.015 & 0.882 \\
+ &  & KTO & 0.085 & 0.99 & 0.081 & 0.777 \\
+ &  & KTO+reg & 0.066 & 0.24 & 0.001 & 0.882 \\
+ & 4/5 & SFT & 0.191 & 0.56 & 0.032 & 0.805 \\
+ &  & KTO & 0.199 & 0.99 & 0.193 & 0.743 \\
+ &  & KTO+reg & 0.175 & 0.09 & 0.001 & 0.820 \\
+ & 3/5 & SFT & 0.378 & 0.38 & 0.091 & 0.659 \\
+ &  & KTO & 0.383 & 0.98 & 0.373 & 0.628 \\
+ &  & KTO+reg & 0.365 & 0.02 & 0.003 & 0.658 \\
+\addlinespace
+Qwen3.5-2B & 5/5 & SFT & 0.069 & 0.81 & 0.017 & 0.873 \\
+ &  & KTO & 0.071 & 1.00 & 0.069 & 0.780 \\
+ &  & KTO+reg & 0.060 & 0.25 & 0.001 & 0.891 \\
+ & 4/5 & SFT & 0.174 & 0.63 & 0.041 & 0.798 \\
+ &  & KTO & 0.188 & 0.99 & 0.184 & 0.743 \\
+ &  & KTO+reg & 0.164 & 0.10 & 0.001 & 0.824 \\
+ & 3/5 & SFT & 0.362 & 0.44 & 0.106 & 0.664 \\
+ &  & KTO & 0.371 & 0.99 & 0.362 & 0.628 \\
+ &  & KTO+reg & 0.355 & 0.02 & 0.003 & 0.668 \\
+\addlinespace
+SmolLM3-3B & 5/5 & SFT & 0.051 & 0.87 & 0.012 & 0.895 \\
+ &  & KTO & 0.051 & 0.99 & 0.047 & 0.796 \\
+ &  & KTO+reg & 0.041 & 0.25 & 0.000 & 0.903 \\
+ & 4/5 & SFT & 0.144 & 0.68 & 0.036 & 0.813 \\
+ &  & KTO & 0.150 & 0.99 & 0.143 & 0.735 \\
+ &  & KTO+reg & 0.134 & 0.09 & 0.000 & 0.839 \\
+ & 3/5 & SFT & 0.322 & 0.51 & 0.108 & 0.671 \\
+ &  & KTO & 0.332 & 0.97 & 0.318 & 0.626 \\
+ &  & KTO+reg & 0.314 & 0.02 & 0.003 & 0.671 \\
+\bottomrule
+\end{tabular}
+\end{table}

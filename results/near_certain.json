@@ -1,0 +1,182 @@
+{
+  "DynaSent|lfm-1.2b|sft": {
+    "confident": 0.5218139865104721,
+    "confident_error": 0.05252041178558751,
+    "confident_error_sd": 0.006742544895882567,
+    "seeds": 5
+  },
+  "DynaSent|lfm-1.2b|kto": {
+    "confident": 0.9878239261625843,
+    "confident_error": 0.2488107916222932,
+    "confident_error_sd": 0.009607768404302401,
+    "seeds": 5
+  },
+  "DynaSent|lfm-1.2b|kto-dreg1.0": {
+    "confident": 0.09866879659211927,
+    "confident_error": 0.0017216897408590698,
+    "confident_error_sd": 0.0006658974612106521,
+    "seeds": 5
+  },
+  "DynaSent|lfm-1.2b|rdpo": {
+    "confident": 0.9387646432374867,
+    "confident_error": 0.22877174298899536,
+    "confident_error_sd": 0.006519243167211486,
+    "seeds": 5
+  },
+  "DynaSent|lfm-1.2b|rdpo-dreg1.0": {
+    "confident": 0.05525381611643593,
+    "confident_error": 0.0007277245296414625,
+    "confident_error_sd": 0.0002691826568708396,
+    "seeds": 5
+  },
+  "DynaSent|qwen-2b|sft": {
+    "confident": 0.5772630457933973,
+    "confident_error": 0.05713525026624069,
+    "confident_error_sd": 0.006996216592954134,
+    "seeds": 5
+  },
+  "DynaSent|qwen-2b|kto": {
+    "confident": 0.9898118565850196,
+    "confident_error": 0.23262335818246363,
+    "confident_error_sd": 0.005088611001265021,
+    "seeds": 5
+  },
+  "DynaSent|qwen-2b|kto-dreg1.0": {
+    "confident": 0.10583954561590343,
+    "confident_error": 0.0012424565140220093,
+    "confident_error_sd": 0.00031998147634575695,
+    "seeds": 5
+  },
+  "DynaSent|qwen-2b|rdpo": {
+    "confident": 0.9760205892793753,
+    "confident_error": 0.22355342563010297,
+    "confident_error_sd": 0.009149542213759096,
+    "seeds": 5
+  },
+  "DynaSent|qwen-2b|rdpo-dreg1.0": {
+    "confident": 0.1297302094426695,
+    "confident_error": 0.0028044018459353923,
+    "confident_error_sd": 0.0004419559672697456,
+    "seeds": 5
+  },
+  "DynaSent|smollm3-3b|sft": {
+    "confident": 0.653727369542066,
+    "confident_error": 0.05335463258785942,
+    "confident_error_sd": 0.004425080673816578,
+    "seeds": 5
+  },
+  "DynaSent|smollm3-3b|kto": {
+    "confident": 0.9849307774227902,
+    "confident_error": 0.18329783457578985,
+    "confident_error_sd": 0.006264550139932911,
+    "seeds": 5
+  },
+  "DynaSent|smollm3-3b|kto-dreg1.0": {
+    "confident": 0.10459708910188144,
+    "confident_error": 0.0008164714235001775,
+    "confident_error_sd": 0.0006623396576870888,
+    "seeds": 5
+  },
+  "DynaSent|smollm3-3b|rdpo": {
+    "confident": 0.9869719559815406,
+    "confident_error": 0.18722044728434503,
+    "confident_error_sd": 0.006007515791266866,
+    "seeds": 5
+  },
+  "DynaSent|smollm3-3b|rdpo-dreg1.0": {
+    "confident": 0.1469471068512602,
+    "confident_error": 0.0018991835285764997,
+    "confident_error_sd": 0.00041908835474325855,
+    "seeds": 5
+  },
+  "GoEmotions|lfm-1.2b|sft": {
+    "confident": 0.43563717306622146,
+    "confident_error": 0.031096271563717304,
+    "confident_error_sd": 0.001826417649391739,
+    "seeds": 5
+  },
+  "GoEmotions|lfm-1.2b|kto": {
+    "confident": 0.9405230940456317,
+    "confident_error": 0.2030940456316082,
+    "confident_error_sd": 0.011554871252453153,
+    "seeds": 5
+  },
+  "GoEmotions|lfm-1.2b|kto-dreg1.0": {
+    "confident": 0.24903728436282688,
+    "confident_error": 0.006833611574846968,
+    "confident_error_sd": 0.001346182937269544,
+    "seeds": 5
+  },
+  "GoEmotions|lfm-1.2b|rdpo": {
+    "confident": 0.9575514746800223,
+    "confident_error": 0.20888146911519198,
+    "confident_error_sd": 0.005013538396683029,
+    "seeds": 5
+  },
+  "GoEmotions|lfm-1.2b|rdpo-dreg1.0": {
+    "confident": 0.16881469115191988,
+    "confident_error": 0.00218141346688926,
+    "confident_error_sd": 0.00043533905877814026,
+    "seeds": 5
+  },
+  "GoEmotions|qwen-2b|sft": {
+    "confident": 0.4780634390651085,
+    "confident_error": 0.03953255425709516,
+    "confident_error_sd": 0.004787953578221803,
+    "seeds": 5
+  },
+  "GoEmotions|qwen-2b|kto": {
+    "confident": 0.8944240400667779,
+    "confident_error": 0.1761602671118531,
+    "confident_error_sd": 0.004667429860613101,
+    "seeds": 5
+  },
+  "GoEmotions|qwen-2b|kto-dreg1.0": {
+    "confident": 0.27089593767390097,
+    "confident_error": 0.007924318308291597,
+    "confident_error_sd": 0.0005184558574892428,
+    "seeds": 5
+  },
+  "GoEmotions|qwen-2b|rdpo": {
+    "confident": 0.9757818586533112,
+    "confident_error": 0.21811908736783528,
+    "confident_error_sd": 0.003911565077171068,
+    "seeds": 5
+  },
+  "GoEmotions|qwen-2b|rdpo-dreg1.0": {
+    "confident": 0.2667779632721202,
+    "confident_error": 0.009059543683917641,
+    "confident_error_sd": 0.0039140976543720896,
+    "seeds": 5
+  },
+  "GoEmotions|smollm3-3b|sft": {
+    "confident": 0.45765164162493044,
+    "confident_error": 0.034835837506956034,
+    "confident_error_sd": 0.005493138644074821,
+    "seeds": 5
+  },
+  "GoEmotions|smollm3-3b|kto": {
+    "confident": 0.9090484140233723,
+    "confident_error": 0.18664440734557597,
+    "confident_error_sd": 0.016226609959105624,
+    "seeds": 5
+  },
+  "GoEmotions|smollm3-3b|kto-dreg1.0": {
+    "confident": 0.2889705063995548,
+    "confident_error": 0.009304396215915414,
+    "confident_error_sd": 0.002425142562041598,
+    "seeds": 5
+  },
+  "GoEmotions|smollm3-3b|rdpo": {
+    "confident": 0.9734891485809684,
+    "confident_error": 0.21535893155258767,
+    "confident_error_sd": 0.00479932333665895,
+    "seeds": 5
+  },
+  "GoEmotions|smollm3-3b|rdpo-dreg1.0": {
+    "confident": 0.25475792988313856,
+    "confident_error": 0.007991096271563717,
+    "confident_error_sd": 0.002299022597166918,
+    "seeds": 5
+  }
+}

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentalign"
+version = "2.0.0"
+description = "Preference optimization for small language models under human label variation"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.24", "scipy>=1.11"]
+
+[project.optional-dependencies]
+# Data construction, evaluation, and the statistics — no GPU, no deep-learning stack.
+# The objective unit tests and the whole data pipeline run under this alone.
+data = ["pandas>=2.0", "pyarrow>=14.0", "certifi", "datasets>=3.0"]
+# Training and inference. The TRL bound is a range, not a floor: 0.24 is the first
+# release where `loss_type` is a list and 'robust' exists, and 1.x removed CPOTrainer
+# (SimPO, AlphaPO), renamed the trainer hooks, and changed the preference batch layout.
+# 0.2x is also the line Unsloth 2026.x targets.
+train = [
+  "torch>=2.4",
+  "transformers>=5.0",
+  "trl>=0.24,<1.0",
+  "peft>=0.14",
+  "accelerate>=1.0",
+  "bitsandbytes>=0.44",
+  "sentencepiece",
+]
+dev = ["pytest>=8.0"]
+all = ["sentalign[data,train,dev]"]
+
+[project.scripts]
+sentalign = "sentalign.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

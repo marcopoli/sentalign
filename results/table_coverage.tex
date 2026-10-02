@@ -1,0 +1,33 @@
+\begin{table}[t]
+\centering
+\caption{Error rate among the items a model keeps when it abstains on the least confident ones. Items are pooled over the four evaluation sets within a seed and averaged over seeds. The 100\% column is the plain error rate. The KTO rows show how little a model gains by abstaining when its confidence says little about its errors. $\downarrow$: lower is better.}
+\label{tab:coverage}
+\small
+\begin{tabular}{llrrrr}
+\toprule
+& & \multicolumn{4}{c}{Error rate among kept items $\downarrow$, at coverage} \\ \cmidrule(lr){3-6}
+Model & Objective & 100\% & 80\% & 50\% & 25\% \\
+\midrule
+LFM2.5-1.2B & SFT & 0.255 & 0.186 & 0.095 & 0.053 \\
+ & SimPO & 0.245 & 0.176 & 0.091 & 0.046 \\
+ & KTO & 0.256 & 0.197 & 0.175 & 0.128 \\
+ & KTO+reg & 0.234 & 0.166 & 0.080 & 0.042 \\
+ & R-DPO & 0.265 & 0.198 & 0.137 & 0.097 \\
+ & R-DPO+reg & 0.244 & 0.176 & 0.087 & 0.043 \\
+\addlinespace
+Qwen3.5-2B & SFT & 0.236 & 0.164 & 0.082 & 0.043 \\
+ & SimPO & 0.229 & 0.157 & 0.075 & 0.040 \\
+ & KTO & 0.238 & 0.178 & 0.163 & 0.113 \\
+ & KTO+reg & 0.216 & 0.146 & 0.066 & 0.033 \\
+ & R-DPO & 0.238 & 0.175 & 0.149 & 0.110 \\
+ & R-DPO+reg & 0.224 & 0.152 & 0.071 & 0.036 \\
+\addlinespace
+SmolLM3-3B & SFT & 0.189 & 0.121 & 0.054 & 0.030 \\
+ & SimPO & 0.184 & 0.115 & 0.052 & 0.028 \\
+ & KTO & 0.191 & 0.136 & 0.108 & 0.099 \\
+ & KTO+reg & 0.174 & 0.107 & 0.046 & 0.022 \\
+ & R-DPO & 0.195 & 0.137 & 0.121 & 0.088 \\
+ & R-DPO+reg & 0.180 & 0.114 & 0.049 & 0.024 \\
+\bottomrule
+\end{tabular}
+\end{table}

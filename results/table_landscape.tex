@@ -1,0 +1,37 @@
+\begin{table}[t]
+\centering
+\caption{Accuracy, ranking and calibration of every objective. Per-seed mean over the four evaluation sets, then averaged over seeds. $\uparrow$ marks a column where higher is better and $\downarrow$ one where lower is: accuracy and the AUROC of confidence against correctness are higher-better, ECE is lower-better. The leading value among the objectives reported here is in bold for each column.}
+\label{tab:landscape}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Objective & \multicolumn{3}{c}{LFM2.5-1.2B} & \multicolumn{3}{c}{Qwen3.5-2B} & \multicolumn{3}{c}{SmolLM3-3B} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(lr){8-10}
+ & Acc$\uparrow$ & AUROC$\uparrow$ & ECE$\downarrow$ & Acc$\uparrow$ & AUROC$\uparrow$ & ECE$\downarrow$ & Acc$\uparrow$ & AUROC$\uparrow$ & ECE$\downarrow$ \\
+\midrule
+\multicolumn{10}{@{}l}{\emph{Reference}} \\
+SFT & 0.721 & 0.770 & 0.106 & 0.740 & 0.784 & 0.103 & 0.801 & 0.801 & \textbf{0.076} \\
+SFT-soft & 0.727 & 0.777 & 0.099 & 0.743 & 0.780 & 0.131 & 0.802 & 0.802 & 0.137 \\
+\addlinespace
+\multicolumn{10}{@{}l}{\emph{Pairwise preference}} \\
+DPO & 0.726 & 0.767 & 0.234 & 0.747 & 0.777 & 0.235 & 0.804 & 0.796 & 0.184 \\
+R-DPO & 0.710 & 0.719 & 0.266 & 0.740 & 0.693 & 0.251 & 0.793 & 0.685 & 0.203 \\
+IPO & 0.719 & 0.719 & 0.183 & 0.768 & 0.755 & 0.172 & 0.812 & 0.777 & 0.138 \\
+GR-DPO & 0.717 & 0.758 & 0.244 & 0.740 & 0.763 & 0.242 & 0.799 & 0.791 & 0.188 \\
+MixDPO & 0.710 & 0.759 & 0.082 & 0.669 & 0.714 & 0.170 & 0.741 & 0.713 & 0.239 \\
+\addlinespace
+\multicolumn{10}{@{}l}{\emph{Reference-free}} \\
+SimPO & 0.733 & 0.773 & 0.111 & 0.750 & 0.795 & 0.111 & 0.807 & 0.807 & 0.080 \\
+AlphaPO & 0.731 & 0.769 & 0.149 & 0.746 & 0.788 & 0.134 & 0.804 & 0.805 & 0.110 \\
+\addlinespace
+\multicolumn{10}{@{}l}{\emph{Unpaired}} \\
+KTO & 0.721 & 0.644 & 0.274 & 0.736 & 0.666 & 0.260 & 0.797 & 0.690 & 0.199 \\
+\addlinespace
+\multicolumn{10}{@{}l}{\emph{With the anchor (this work)}} \\
+KTO+reg & \textbf{0.744} & \textbf{0.780} & \textbf{0.079} & 0.768 & 0.792 & 0.092 & \textbf{0.817} & 0.810 & 0.115 \\
+R-DPO+reg & 0.731 & 0.772 & 0.107 & 0.756 & \textbf{0.795} & \textbf{0.080} & 0.810 & \textbf{0.810} & 0.096 \\
+IPO+reg & 0.713 & 0.755 & 0.084 & \textbf{0.769} & 0.766 & 0.151 & 0.812 & 0.793 & 0.119 \\
+\bottomrule
+\end{tabular}
+\end{table}

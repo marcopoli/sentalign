@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Sensitivity to the anchor weight $\lambda$, KTO on LFM2.5-1.2B. Per-seed mean over the four evaluation sets, averaged over the three seeds every row shares; $\lambda = 0$ is the twin without the anchor and SFT the supervised baseline. $\uparrow$ marks a column where higher is better and $\downarrow$ one where lower is.}
+\label{tab:lambda}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+$\lambda$ & AUROC$\uparrow$ & E-AURC$\downarrow$ & Acc$\uparrow$ & ECE$\downarrow$ \\
+\midrule
+0 (KTO) & 0.640 & 0.161 & 0.727 & 0.269 \\
+0.1 & 0.773 & 0.075 & 0.727 & 0.065 \\
+0.3 & 0.780 & 0.070 & 0.741 & 0.054 \\
+1 & 0.783 & 0.069 & 0.743 & 0.073 \\
+3 & 0.783 & 0.069 & 0.742 & 0.093 \\
+\addlinespace
+SFT & 0.770 & 0.081 & 0.718 & 0.100 \\
+\bottomrule
+\end{tabular}
+\end{table}

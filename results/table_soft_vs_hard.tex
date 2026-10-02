@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{The anchor towards the annotator distribution against the anchor towards the majority label, for KTO. Uncorrected $p$ with 95\% intervals, as declared: this is a secondary question about the target, not one of the confirmatory families. The accuracy row was added after the results were known. An arrow gives the sign of a difference that favours the soft target: $\uparrow$ where higher is better, $\downarrow$ where lower is.}
+\label{tab:soft-vs-hard}
+\small
+\begin{tabular}{llll}
+\toprule
+Model & Metric & Difference (soft $-$ hard) [95\% CI] & $p$ \\
+\midrule
+LFM2.5-1.2B & $\Delta$AUROC$\uparrow$ & +0.006 [-0.008, +0.019] & 0.300 \\
+ & $\Delta$E-AURC$\downarrow$ & -0.004 [-0.011, +0.003] & 0.176 \\
+ & $\Delta$ECE$\downarrow$ & -0.024 [-0.077, +0.029] & 0.278 \\
+ & $\Delta$accuracy$\uparrow$ & +0.008 [-0.003, +0.019] & 0.106 \\
+\addlinespace
+Qwen3.5-2B & $\Delta$AUROC$\uparrow$ & +0.002 [-0.009, +0.012] & 0.698 \\
+ & $\Delta$E-AURC$\downarrow$ & -0.001 [-0.005, +0.003] & 0.408 \\
+ & $\Delta$ECE$\downarrow$ & +0.032 [+0.004, +0.060] & 0.033 \\
+ & $\Delta$accuracy$\uparrow$ & +0.001 [-0.004, +0.006] & 0.626 \\
+\bottomrule
+\end{tabular}
+\end{table}

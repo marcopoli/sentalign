@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{IPO+reg on SmolLM3-3B, run after the confirmatory families were fixed and reported descriptively: per-seed mean over the four DynaSent evaluation sets, five seeds, seed-paired $t$ with 95\% intervals and uncorrected $p$. An arrow gives the sign of a difference that favours the first-named arm: $\uparrow$ where higher is better, $\downarrow$ where lower is.}
+\label{tab:ipo-reg-smollm3}
+\footnotesize
+\begin{tabular}{lllll}
+\toprule
+Model & Comparison & Metric & Difference [95\% CI] & $p$ \\
+\midrule
+SmolLM3-3B & IPO+reg vs IPO & $\Delta$AUROC$\uparrow$ & +0.016 [+0.005, +0.027] & 0.017 \\
+ & IPO+reg vs IPO & $\Delta$E-AURC$\downarrow$ & -0.007 [-0.010, -0.003] & 0.009 \\
+ & IPO+reg vs IPO & $\Delta$accuracy$\uparrow$ & +0.000 [-0.001, +0.002] & 0.822 \\
+ & IPO+reg vs IPO & $\Delta$ECE$\downarrow$ & -0.019 [-0.025, -0.013] & $<$0.001 \\
+ & IPO+reg vs SFT & $\Delta$AUROC$\uparrow$ & -0.008 [-0.018, +0.002] & 0.090 \\
+ & IPO+reg vs SFT & $\Delta$E-AURC$\downarrow$ & +0.002 [-0.001, +0.005] & 0.086 \\
+ & IPO+reg vs SFT & $\Delta$accuracy$\uparrow$ & +0.011 [+0.006, +0.016] & 0.004 \\
+ & IPO+reg vs SFT & $\Delta$ECE$\downarrow$ & +0.043 [+0.038, +0.049] & $<$0.001 \\
+\bottomrule
+\end{tabular}
+\end{table}

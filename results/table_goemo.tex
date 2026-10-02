@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\caption{The second sentiment corpus. GoEmotions rater labels mapped to the same four labels, same prompt and protocol. Per-seed mean over the held-out ambiguity-stratified set and the official test split, five seeds, paired $t$ on seeds, Holm correction within each panel across models. $\uparrow$: higher is better, so a positive difference favours the first-named arm.}
+\label{tab:goemo}
+\footnotesize
+\begin{tabular}{llll}
+\toprule
+Model & Comparison & $\Delta$AUROC$\uparrow$ [95\% CI] & $\Delta$accuracy$\uparrow$ [95\% CI] \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{A. Against SFT, Holm over 12}} \\
+LFM2.5-1.2B & KTO vs SFT & -0.038$^{*}$ [-0.051, -0.025] & +0.002 [-0.004, +0.008] \\
+ & R-DPO vs SFT & -0.010 [-0.022, +0.001] & +0.003 [-0.002, +0.009] \\
+Qwen3.5-2B & KTO vs SFT & -0.037 [-0.063, -0.011] & +0.005 [-0.000, +0.011] \\
+ & R-DPO vs SFT & -0.023$^{*}$ [-0.032, -0.015] & +0.003 [-0.006, +0.011] \\
+SmolLM3-3B & KTO vs SFT & -0.023 [-0.042, -0.003] & -0.001 [-0.009, +0.007] \\
+ & R-DPO vs SFT & -0.020 [-0.031, -0.009] & +0.001 [-0.004, +0.005] \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{B. Anchored arm against its twin, Holm over 12}} \\
+LFM2.5-1.2B & KTO+reg vs KTO & +0.039$^{*}$ [+0.025, +0.054] & +0.004 [-0.001, +0.009] \\
+ & R-DPO+reg vs R-DPO & +0.013 [+0.005, +0.021] & +0.002 [-0.002, +0.007] \\
+Qwen3.5-2B & KTO+reg vs KTO & +0.040$^{*}$ [+0.020, +0.060] & +0.005 [+0.002, +0.007] \\
+ & R-DPO+reg vs R-DPO & +0.020$^{*}$ [+0.012, +0.028] & -0.010 [-0.022, +0.002] \\
+SmolLM3-3B & KTO+reg vs KTO & +0.033$^{*}$ [+0.017, +0.049] & +0.008$^{*}$ [+0.004, +0.011] \\
+ & R-DPO+reg vs R-DPO & +0.023$^{*}$ [+0.012, +0.033] & -0.002 [-0.009, +0.005] \\
+\bottomrule
+\end{tabular}
+\end{table}

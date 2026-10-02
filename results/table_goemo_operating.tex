@@ -1,0 +1,31 @@
+\begin{table}[t]
+\centering
+\caption{GoEmotions at the operating points of a deployment. Error rate among all items (coverage 100\%) and among the most confident half (50\%); the share of items shown with confidence above 0.9, and the share that are both wrong and shown so, which is what a person trusting the score is misled by; and the expected cost per item of the cheapest deferral policy when an undetected error costs $r = 10$ reviews, with the share deferred in brackets; the threshold is chosen on one half of the items and paid for on the other, as in Table~\ref{tab:deferral}. Items pooled over the two GoEmotions evaluation sets within a seed, averaged over five seeds. Deferring every item costs $1$. $\downarrow$: lower is better; the shares above the confidence threshold and deferred have no better direction. Descriptive, outside the declared families.}
+\label{tab:goemo-operating}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrrr}
+\toprule
+& & \multicolumn{2}{c}{Error $\downarrow$} & & & \\ \cmidrule(lr){3-4}
+Model & Objective & 100\% & 50\% & $>0.9$ & Wrong and $>0.9$ $\downarrow$ & Cost $\downarrow$ at $r = 10$ \\
+\midrule
+LFM2.5-1.2B & SFT & 0.236 & 0.087 & 0.44 & 0.031 & 0.827 (68\%) \\
+ & KTO & 0.234 & 0.105 & 0.94 & 0.203 & 0.930 (73\%) \\
+ & KTO+reg & 0.230 & 0.082 & 0.25 & 0.007 & 0.822 (68\%) \\
+ & R-DPO & 0.233 & 0.093 & 0.96 & 0.209 & 0.856 (73\%) \\
+ & R-DPO+reg & 0.230 & 0.084 & 0.17 & 0.002 & 0.823 (69\%) \\
+\addlinespace
+Qwen3.5-2B & SFT & 0.234 & 0.090 & 0.48 & 0.040 & 0.816 (69\%) \\
+ & KTO & 0.229 & 0.103 & 0.89 & 0.176 & 0.925 (77\%) \\
+ & KTO+reg & 0.225 & 0.082 & 0.27 & 0.008 & 0.814 (68\%) \\
+ & R-DPO & 0.232 & 0.109 & 0.98 & 0.218 & 0.870 (74\%) \\
+ & R-DPO+reg & 0.243 & 0.097 & 0.27 & 0.009 & 0.822 (73\%) \\
+\addlinespace
+SmolLM3-3B & SFT & 0.230 & 0.085 & 0.46 & 0.035 & 0.819 (69\%) \\
+ & KTO & 0.231 & 0.093 & 0.91 & 0.187 & 0.890 (70\%) \\
+ & KTO+reg & 0.224 & 0.078 & 0.29 & 0.009 & 0.805 (67\%) \\
+ & R-DPO & 0.229 & 0.097 & 0.97 & 0.215 & 0.868 (73\%) \\
+ & R-DPO+reg & 0.232 & 0.086 & 0.25 & 0.008 & 0.820 (71\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
